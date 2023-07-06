@@ -5,7 +5,7 @@ import pathlib
 import sys
 
 from . import __version__
-from .treeGen import DirectoryTree
+from treeGen.treeGen import DirectoryTree
 
 
 def main():

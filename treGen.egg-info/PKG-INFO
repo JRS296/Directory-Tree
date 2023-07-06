@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: treGen
+Version: 2.1.1
+Summary: A simple Directory Tree Generator
+Home-page: https://github.com/JRS296/Directory-Tree
+Author: Jonathan Rufus Samuel
+Author-email: jrsstudios@skiff.com
+License: MIT
+Description: README.MD
+Keywords: tree-generator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
