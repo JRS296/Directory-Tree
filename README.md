@@ -23,20 +23,20 @@ pip install treGen
 To take a quick test on **treGen**, you can use the sample `home/` directory provided along with the application's code and run the following command:br
 
 ```sh
-$ treGen ../hello/
-
-../hello/
+PS D:\CompSci - Learn\Python\Root_Tree_Generator> treGen "D:\CompSci - Learn\Python\GenTreeRoot"
+D:\CompSci - Learn\Python\GenTreeRoot\
 │
-├── hello/
-│   ├── __init__.py
-│   └── hello.py
+├── src\
+│   ├── cli.py
+│   ├── treeGen.py
+│   └── __init__.py
 │
-├── tests/
-│   └── test_hello.py
-│
-├── requirements.txt
-├── setup.py
+├── CHANGELOG.txt
+├── LICENSE
+├── MANIFEST.in
 ├── README.md
+├── setup.py
+└── test.py
 ```
 
 That's it! You've generated a nice directory tree diagram.
