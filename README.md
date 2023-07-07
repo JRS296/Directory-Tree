@@ -10,28 +10,20 @@ Simple Python CLI App to generate a directory tree for a given path
 
 ## Run the App
 
-To run **treGen**, you need to download the source code. Then open a terminal or command-line window and run the following steps:
+To run **treGen**, you need to intall it via pip:
 
 1. Create and activate a Python virtual environment
 
 ```sh
-$ cd rptree_project/
-$ python -m venv ./venv
-$ source venv/bin/activate
-(venv) $
+pip install treGen
 ```
 
-2. Run the application
-
-```sh
-(venv) $ python tree.py /path/to/directory/
-```
-
-**Note:** The `-h` or `--help` option provides help on how to use RP Tree.
+**Note:** The `-h` or `--help` option provides help on how to use treGen.
 
 To take a quick test on **treGen**, you can use the sample `home/` directory provided along with the application's code and run the following command:br
 
-(venv) $ python tree.py ../hello/
+```sh
+$ treGen ../hello/
 
 ../hello/
 │
@@ -45,6 +37,7 @@ To take a quick test on **treGen**, you can use the sample `home/` directory pro
 ├── requirements.txt
 ├── setup.py
 ├── README.md
+```
 
 That's it! You've generated a nice directory tree diagram.
 
