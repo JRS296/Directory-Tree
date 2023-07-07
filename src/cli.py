@@ -5,8 +5,7 @@ import pathlib
 import sys
 
 from . import __version__
-from treeGen.treeGen import DirectoryTree
-
+from src import treeGen
 
 def main():
     args = parse_cmd_line_arguments()
@@ -14,7 +13,7 @@ def main():
     if not root_dir.is_dir():
         print("The specified root directory doesn't exist")
         sys.exit()
-    tree = DirectoryTree(
+    tree = treeGen.DirectoryTree(
         root_dir, dir_only=args.dir_only, output_file=args.output_file
     )
     tree.generate()
@@ -24,9 +23,9 @@ def parse_cmd_line_arguments():
     parser = argparse.ArgumentParser(
         prog="tree",
         description="TreeGen, a directory tree generator",
-        epilog="Thanks for using RP Tree!",
+        epilog="Thanks for using treGen!",
     )
-    parser.version = f"RP Tree v{__version__}"
+    parser.version = f"treGen v{__version__}"
     parser.add_argument("-v", "--version", action="version")
     parser.add_argument(
         "root_dir",

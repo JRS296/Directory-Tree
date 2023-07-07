@@ -1,12 +1,88 @@
 Metadata-Version: 2.1
 Name: treGen
-Version: 2.1.1
+Version: 3.0.0
 Summary: A simple Directory Tree Generator
 Home-page: https://github.com/JRS296/Directory-Tree
 Author: Jonathan Rufus Samuel
 Author-email: jrsstudios@skiff.com
 License: MIT
-Description: README.MD
+Description: # treeGen -  A directory Tree Generator
+        
+        Simple Python CLI App to generate a directory tree for a given path
+        
+        ## Current TaskList
+        
+        - [ ] Add support for sorting files and directories
+        - [ ] Add icons and colors to the tree diagram
+        - [X] Set up the application to publish it as an open source project
+        
+        ## Run the App
+        
+        To run **treGen**, you need to download the source code. Then open a terminal or command-line window and run the following steps:
+        
+        1. Create and activate a Python virtual environment
+        
+        ```sh
+        $ cd rptree_project/
+        $ python -m venv ./venv
+        $ source venv/bin/activate
+        (venv) $
+        ```
+        
+        2. Run the application
+        
+        ```sh
+        (venv) $ python tree.py /path/to/directory/
+        ```
+        
+        **Note:** The `-h` or `--help` option provides help on how to use RP Tree.
+        
+        To take a quick test on **treGen**, you can use the sample `home/` directory provided along with the application's code and run the following command:br
+        
+        (venv) $ python tree.py ../hello/
+        
+        ../hello/
+        â”‚
+        â”œâ”€â”€ hello/
+        â”‚   â”œâ”€â”€ __init__.py
+        â”‚   â””â”€â”€ hello.py
+        â”‚
+        â”œâ”€â”€ tests/
+        â”‚   â””â”€â”€ test_hello.py
+        â”‚
+        â”œâ”€â”€ requirements.txt
+        â”œâ”€â”€ setup.py
+        â”œâ”€â”€ README.md
+        
+        That's it! You've generated a nice directory tree diagram.
+        
+        ## Current Features
+        
+        If you run treGen with a directory path as an argument, then you get the full directory tree printed on your screen. The default input directory is your current directory.
+        
+        treGen also provides the following options:
+        
+        - `-v`, `--version` shows the application version and exits
+        - `-h`, `--help` show a usage message
+        - `-d`, `--dir-only` generates a directory-only tree
+        - `-o`, `--output-file` generates a tree and save it to a file in markdown format
+        
+        ## Release History
+        
+        - 0.1.0
+        - 1.0.0
+        - 2.0.0
+          - Serious breaking issues with console scripts
+        - 3.0.0
+          - Finally got the setup.py to work xD
+        - 4.0.0
+          - A work in progress
+        
+        ## About the Author + Original Fork Address
+        
+        Leodanis Pozo Ramos - Email: leodanis@realpython.com
+        A fork from [https://github.com/realpython/materials/tree/master/directory-tree-generator-python](https://github.com/realpython/materials/tree/master/directory-tree-generator-python)
+        
 Keywords: tree-generator
 Platform: UNKNOWN
 Classifier: Development Status :: 5 - Production/Stable

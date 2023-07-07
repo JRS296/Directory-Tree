@@ -1,15 +1,16 @@
-# Directory-Tree
+# treeGen -  A directory Tree Generator
+
 Simple Python CLI App to generate a directory tree for a given path
 
 ## Current TaskList
 
 - [ ] Add support for sorting files and directories
 - [ ] Add icons and colors to the tree diagram
-- [ ] Set up the application to publish it as an open source project
+- [X] Set up the application to publish it as an open source project
 
 ## Run the App
 
-To run **RP Tree**, you need to download the source code. Then open a terminal or command-line window and run the following steps:
+To run **treGen**, you need to download the source code. Then open a terminal or command-line window and run the following steps:
 
 1. Create and activate a Python virtual environment
 
@@ -28,10 +29,10 @@ $ source venv/bin/activate
 
 **Note:** The `-h` or `--help` option provides help on how to use RP Tree.
 
-To take a quick test on **RP Tree**, you can use the sample `home/` directory provided along with the application's code and run the following command:
+To take a quick test on **treGen**, you can use the sample `home/` directory provided along with the application's code and run the following command:br
 
-```sh
 (venv) $ python tree.py ../hello/
+
 ../hello/
 │
 ├── hello/
@@ -44,16 +45,14 @@ To take a quick test on **RP Tree**, you can use the sample `home/` directory pr
 ├── requirements.txt
 ├── setup.py
 ├── README.md
-└── LICENSE
-```
 
 That's it! You've generated a nice directory tree diagram.
 
 ## Current Features
 
-If you run RP Tree with a directory path as an argument, then you get the full directory tree printed on your screen. The default input directory is your current directory.
+If you run treGen with a directory path as an argument, then you get the full directory tree printed on your screen. The default input directory is your current directory.
 
-RP Tree also provides the following options:
+treGen also provides the following options:
 
 - `-v`, `--version` shows the application version and exits
 - `-h`, `--help` show a usage message
@@ -64,6 +63,11 @@ RP Tree also provides the following options:
 
 - 0.1.0
 - 1.0.0
+- 2.0.0
+  - Serious breaking issues with console scripts
+- 3.0.0
+  - Finally got the setup.py to work xD
+- 4.0.0
   - A work in progress
 
 ## About the Author + Original Fork Address
